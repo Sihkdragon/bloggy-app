@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Fredoka", system-ui, sans-serif;
+  }
+  .mycontainer {
+    @apply container mx-auto;
+  }
+  .navitgationButton {
+    @apply inline-block mr-[80px] relative text-[20px] hover:text-myblue-2 hover:after:underlineAnchor;
+  }
+  .underlineAnchor {
+    @apply bg-myblue-2 w-full h-[1px] bottom-0 left-0 absolute;
+  }
+  .bg-triangle {
+    @apply w-0 h-0 top-0 z-0 border-b-[500px] border-b-myblue-1 border-r-[500px] border-r-transparent;
+  }
+}

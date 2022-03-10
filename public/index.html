@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home | Bloggy</title>
+  </head>
+  <body>
+    <main class="w-full min-h-screen">
+      <nav
+        class="container flex justify-between py-[18px] mx-auto items-center text-myblue-1"
+      >
+        <h1 id="brand-name" class="font-bold text-[32px] hover:text-myblue-2">
+          <a href="#">BLOGGY</a>
+        </h1>
+        <div id="menu-group">
+          <a href="google.com" class="navitgationButton">About</a>
+          <a href="#" class="navitgationButton">Gallery</a>
+          <a href="#" class="navitgationButton">News</a>
+          <a
+            href="#"
+            class="inline-block bg-myblue-1 rounded-md py-[7px] px-[25px] text-[16px] text-white hover:bg-myblue-2"
+            >Login</a
+          >
+        </div>
+      </nav>
+      <section
+        id="hero-section"
+        class="mycontainer w-full grid grid-cols-2 h-full"
+      >
+        <div id="hero-left" class="flex flex-col my-24">
+          <h1 class="font-bold text-myred text-[71px]">SOME TEXT HERE</h1>
+          <p class="text-[32px] text-myblue-2">
+            Some explanation is here too but longer than up there
+          </p>
+          <button
+            id="getstarted"
+            class="w-40 h-12 bg-myblue-1 rounded-full text-[16px] text-white mx-auto mt-16"
+          >
+            Get Started
+          </button>
+        </div>
+        <div id="hero-right relative">
+          <img
+            src="img/reading.png"
+            alt=""
+            srcset=""
+            class="absolute bottom-0 right-0 w-[550px]"
+          />
+        </div>
+      </section>
+    </main>
+    <div class="mycontainer my-5 h-[1px] bg-myblue-1"></div>
+    <section id="mission-section" class="min-h-screen mycontainer">
+      <main class="box-border">
+        <h3 class="font-bold text-myred text-4xl">Mission</h3>
+        <div
+          id="mission-list-group"
+          class="w-full grid grid-cols-4 mt-20 mx-auto place-items-center"
+        >
+          <div
+            class="mission-item w-52 h-52 bg-myblue-2 border-8 border-myred rounded-full flex justify-center items-center text-xl text-white shadow-2xl"
+          >
+            Mission Name
+          </div>
+          <div
+            class="mission-item w-52 h-52 bg-myblue-2 border-8 border-myred rounded-full flex justify-center items-center text-xl text-white shadow-2xl"
+          >
+            Mission Name
+          </div>
+          <div
+            class="mission-item w-52 h-52 bg-myblue-2 border-8 border-myred rounded-full flex justify-center items-center text-xl text-white shadow-2xl"
+          >
+            Mission Name
+          </div>
+          <div
+            class="mission-item w-52 h-52 bg-myblue-2 border-8 border-myred rounded-full flex justify-center items-center text-xl text-white shadow-2xl"
+          >
+            Mission Name
+          </div>
+        </div>
+      </main>
+    </section>
+    <section id="news-section"></section>
+    <footer></footer>
+  </body>
+</html>
