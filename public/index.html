@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap"
       rel="stylesheet"
     />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <title>Home | Bloggy</title>
   </head>
   <body>
@@ -28,7 +35,7 @@
           <a href="#" class="navitgationButton">News</a>
           <a
             href="#"
-            class="inline-block bg-myblue-1 rounded-md py-[7px] px-[25px] text-[16px] text-white hover:bg-myblue-2"
+            class="inline-block bg-myblue-1 btn-transition rounded-md py-[7px] px-[25px] text-[16px] text-white hover:bg-myblue-2"
             >Login</a
           >
         </div>
@@ -44,7 +51,7 @@
           </p>
           <button
             id="getstarted"
-            class="w-40 h-12 bg-myblue-1 rounded-full text-[16px] text-white mx-auto mt-16"
+            class="w-40 h-12 bg-myblue-1 btn-transition rounded-full text-[16px] text-white mx-auto mt-16 hover:bg-myblue-2"
           >
             Get Started
           </button>
@@ -60,8 +67,8 @@
       </section>
     </main>
     <div class="mycontainer my-5 h-[1px] bg-myblue-1"></div>
-    <section id="mission-section" class="min-h-screen mycontainer">
-      <main class="box-border">
+    <section id="mission-section" class="min-h-screen">
+      <main class="mycontainer">
         <h3 class="font-bold text-myred text-4xl">Mission</h3>
         <div
           id="mission-list-group"
@@ -89,8 +96,117 @@
           </div>
         </div>
       </main>
+      <main class="bg-gradient-to-r from-myblue-1 to-transparent mt-14">
+        <div class="grid grid-cols-2 h-72 mycontainer">
+          <div id="mission-bottom-left" class="self-center">
+            <a
+              href="#"
+              class="text-xl flex items-center w-2/5 text-white relative hover:text-slate-400"
+              >More details about us
+              <span class="material-icons ml-2">east</span></a
+            >
+          </div>
+          <div id="mission-bottom-left" class="text-center">
+            <h4 class="text-2xl my-8 text-myred font-extrabold">Vision</h4>
+            <p class="text-mygray-1">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
+              sapiente dolores libero maxime error, animi, optio saepe ratione
+              delectus, esse dolor. Molestias soluta delectus sint accusantium.
+              Voluptatum modi quibusdam excepturi dolores, dolore aperiam natus?
+              Commodi consectetur assumenda, animi vitae sequi cum porro
+              doloremque, velit delectus unde quam consequatur alias eveniet.
+          </div>
+        </div>
+      </main>
     </section>
-    <section id="news-section"></section>
-    <footer></footer>
+    <section id="news-section" class="bg-myblue-1 min-h-screen relative">
+      <main class="mycontainer pt-5">
+        <h3 class="font-extrabold text-white text-4xl block">Some News</h3>
+        <div
+          id="jumbotron-container"
+          class="my-8 mycontainer h-96 border border-white rounded overflow-clip relative"
+        >
+          <img src="img/image-hero.jpg" alt="" srcset="" class="object-cover" />
+          <div
+            id="image-title"
+            class="h-1/4 absolute left-10 bottom-8 text-white px-3 py-2"
+          >
+            <h1 class="text-2xl font-extrabold bg-black/40 px-1">
+              Article Title Should Be Here
+            </h1>
+            <h4 class="text-lg">Kamis, 04 November 2020</h4>
+            <a href="#" class="mt-6 flex items-center font-extralight text-xs"
+              >Tampilkan lebih banyak
+              <span class="material-icons md-16 ml-2">east</span></a
+            >
+          </div>
+          <div
+            id="indicator"
+            class="absolute bottom-4 left-1/2 right-1/2 grid grid-flow-col gap-x-3 place-items-center"
+          >
+            <a
+              href="#"
+              class="w-[15px] h-[15px] transition-colors duration-500 bg-slate-400 hover:bg-slate-200 rounded-full"
+            ></a>
+            <a
+              href="#"
+              class="w-4 h-4 transition-colors duration-500 bg-white rounded-full"
+            ></a>
+            <a
+              href="#"
+              class="w-[15px] h-[15px] transition-colors duration-500 bg-slate-400 hover:bg-slate-200 rounded-full"
+            ></a>
+          </div>
+        </div>
+      </main>
+      <main class="bg-white w-full h-36 absolute bottom-0 pt-3">
+        <footer
+          id="footer"
+          class="mycontainer grid grid-cols-6 h-32 gap-x-12"
+        >
+          <div
+            class="footer-item flex flex-col justify-center items-center"
+          >
+            <h1 class="font-[1000] text-myred text-2xl block">BLOGGY</h1>
+            <h5 class="block text-xs text-myblue-2 -m-2">blog for Everyone</h5>
+          </div>
+          <div class="footer-item">
+            <h1 class="text-lg text-myblue-1">Contact</h1>
+            <ul class="list-disc ml-4 text-myblue-2 mt-2">
+              <li><a href="" class="text-sm">Instagram</a></li>
+              <li><a href="" class="text-sm">Github</a></li>
+              <li><a href="" class="text-sm">Bloggy</a></li>
+            </ul>
+          </div>
+          <div class="footer-item w-72">
+            <h1 class="text-lg text-myblue-1">Reach Us</h1>
+            <p class="text-myblue-2 text-sm mt-2">
+              Jl. Dipatiukur No. 117 Kecamatan Coblong
+              <br class="text-myblue-2 text-sm" />Kota Bandung Jawa Barat
+            </p>
+            <button
+              class="px-2 py-1 bg-myred rounded-full text-white text-sm mt-2  hover:bg-opacity-80"
+            >
+              Open Maps
+            </button>
+          </div>
+          <div class="footer-item ml-24">
+            <h1 class="text-lg text-myblue-1">Links</h1>
+            <ul class="list-disc ml-4 text-myblue-2 mt-2">
+              <li><a href="" class="text-sm">About</a></li>
+              <li><a href="" class="text-sm">Gallery</a></li>
+              <li><a href="" class="text-sm">News</a></li>
+            </ul>
+          </div>
+          <div class="footer-item text-center w-96">
+            <form action="#" method="post">
+            <h1 class="text-lg text-myblue-1">Get Our News</h1>
+              <input type="email" name="email" id="email" class="w-4/5 mx-auto border border-myred rounded-3xl mt-2 outline-none h-8 px-2 py-1 text-myblue-2" placeholder="example@gmail.com">
+              <input type="submit" value="subscribe" class="bg-myred block mx-auto px-4 py-1 mt-3 font-light rounded-full text-white text-sm hover:bg-opacity-80">
+          </div>
+        </form>
+        </footer>
+      </main>
+    </section>
   </body>
 </html>

@@ -18,4 +18,7 @@
   .bg-triangle {
     @apply w-0 h-0 top-0 z-0 border-b-[500px] border-b-myblue-1 border-r-[500px] border-r-transparent;
   }
+  .btn-transition {
+    @apply transition-colors duration-500;
+  }
 }
