@@ -21,4 +21,16 @@
   .btn-transition {
     @apply transition-colors duration-500;
   }
+  .btn-primary {
+    @apply bg-myblue-1  text-white hover:bg-myblue-2;
+  }
+  .btn-secondary {
+    @apply bg-myred rounded-full text-white text-sm hover:bg-opacity-80;
+  }
+  .mission-item {
+    @apply w-52 h-52 bg-myblue-2 border-8 border-myred rounded-full flex justify-center items-center text-xl text-white shadow-2xl;
+  }
+  .footerLink {
+    @apply text-sm text-myblue-2 hover:text-opacity-80;
+  }
 }

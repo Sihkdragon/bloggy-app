@@ -30,12 +30,12 @@
           <a href="#">BLOGGY</a>
         </h1>
         <div id="menu-group">
-          <a href="google.com" class="navitgationButton">About</a>
+          <a href="http://google.com" class="navitgationButton">About</a>
           <a href="#" class="navitgationButton">Gallery</a>
           <a href="#" class="navitgationButton">News</a>
           <a
             href="#"
-            class="inline-block bg-myblue-1 btn-transition rounded-md py-[7px] px-[25px] text-[16px] text-white hover:bg-myblue-2"
+            class="inline-block btn-primary btn-transition rounded-md py-[7px] px-[25px] text-[16px]"
             >Login</a
           >
         </div>
@@ -51,7 +51,7 @@
           </p>
           <button
             id="getstarted"
-            class="w-40 h-12 bg-myblue-1 btn-transition rounded-full text-[16px] text-white mx-auto mt-16 hover:bg-myblue-2"
+            class="w-40 h-12 btn-primary btn-transition rounded-full text-[16px] mx-auto mt-16 "
           >
             Get Started
           </button>
@@ -67,7 +67,7 @@
       </section>
     </main>
     <div class="mycontainer my-5 h-[1px] bg-myblue-1"></div>
-    <section id="mission-section" class="min-h-screen">
+    <section id="mission-section" class="min-h-screen relative">
       <main class="mycontainer">
         <h3 class="font-bold text-myred text-4xl">Mission</h3>
         <div
@@ -75,28 +75,28 @@
           class="w-full grid grid-cols-4 mt-20 mx-auto place-items-center"
         >
           <div
-            class="mission-item w-52 h-52 bg-myblue-2 border-8 border-myred rounded-full flex justify-center items-center text-xl text-white shadow-2xl"
+            class="mission-item"
           >
             Mission Name
           </div>
           <div
-            class="mission-item w-52 h-52 bg-myblue-2 border-8 border-myred rounded-full flex justify-center items-center text-xl text-white shadow-2xl"
+            class="mission-item"
           >
             Mission Name
           </div>
           <div
-            class="mission-item w-52 h-52 bg-myblue-2 border-8 border-myred rounded-full flex justify-center items-center text-xl text-white shadow-2xl"
+            class="mission-item"
           >
             Mission Name
           </div>
           <div
-            class="mission-item w-52 h-52 bg-myblue-2 border-8 border-myred rounded-full flex justify-center items-center text-xl text-white shadow-2xl"
+            class="mission-item"
           >
             Mission Name
           </div>
         </div>
       </main>
-      <main class="bg-gradient-to-r from-myblue-1 to-transparent mt-14">
+      <main class="bg-gradient-to-r from-myblue-1 to-transparent mt-14 absolute bottom-0 left-0 right-0">
         <div class="grid grid-cols-2 h-72 mycontainer">
           <div id="mission-bottom-left" class="self-center">
             <a
@@ -124,7 +124,7 @@
         <h3 class="font-extrabold text-white text-4xl block">Some News</h3>
         <div
           id="jumbotron-container"
-          class="my-8 mycontainer h-96 border border-white rounded overflow-clip relative"
+          class="my-8 mycontainer h-1/2 border border-white rounded overflow-clip relative"
         >
           <img src="img/image-hero.jpg" alt="" srcset="" class="object-cover" />
           <div
@@ -172,10 +172,10 @@
           </div>
           <div class="footer-item">
             <h1 class="text-lg text-myblue-1">Contact</h1>
-            <ul class="list-disc ml-4 text-myblue-2 mt-2">
-              <li><a href="" class="text-sm">Instagram</a></li>
-              <li><a href="" class="text-sm">Github</a></li>
-              <li><a href="" class="text-sm">Bloggy</a></li>
+            <ul class="list-disc ml-4  mt-2">
+              <li><a href="" class="footerLink">Instagram</a></li>
+              <li><a href="" class="footerLink">Github</a></li>
+              <li><a href="" class="footerLink">Bloggy</a></li>
             </ul>
           </div>
           <div class="footer-item w-72">
@@ -185,24 +185,24 @@
               <br class="text-myblue-2 text-sm" />Kota Bandung Jawa Barat
             </p>
             <button
-              class="px-2 py-1 bg-myred rounded-full text-white text-sm mt-2  hover:bg-opacity-80"
+              class="px-2 py-1  mt-2 btn-secondary"
             >
               Open Maps
             </button>
           </div>
           <div class="footer-item ml-24">
             <h1 class="text-lg text-myblue-1">Links</h1>
-            <ul class="list-disc ml-4 text-myblue-2 mt-2">
-              <li><a href="" class="text-sm">About</a></li>
-              <li><a href="" class="text-sm">Gallery</a></li>
-              <li><a href="" class="text-sm">News</a></li>
+            <ul class="list-disc ml-4  mt-2">
+              <li><a href="" class="footerLink">About</a></li>
+              <li><a href="" class="footerLink">Gallery</a></li>
+              <li><a href="" class="footerLink">News</a></li>
             </ul>
           </div>
           <div class="footer-item text-center w-96">
             <form action="#" method="post">
             <h1 class="text-lg text-myblue-1">Get Our News</h1>
               <input type="email" name="email" id="email" class="w-4/5 mx-auto border border-myred rounded-3xl mt-2 outline-none h-8 px-2 py-1 text-myblue-2" placeholder="example@gmail.com">
-              <input type="submit" value="subscribe" class="bg-myred block mx-auto px-4 py-1 mt-3 font-light rounded-full text-white text-sm hover:bg-opacity-80">
+              <input type="submit" value="subscribe" class="btn-secondary block mx-auto px-4 py-1 mt-3 font-light ">
           </div>
         </form>
         </footer>
