@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwindcss -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- My CSS  -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0fd1b4aca8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dashboard | Bloggy</title>
+  </head>
+  <body>
+    <main class="flex">
+      <section
+        id=""
+        class="border-r border-myblue-1 min-h-screen py-10 w-24 fixed"
+      >
+        <a
+          href="index.html"
+          class="flex items-center justify-center text-3xl font-extrabold text-center text-white bg-myblue-1 rounded-full w-12 h-12 mx-auto"
+        >
+          B
+        </a>
+        <ul class="text-center mt-20 text-xl text-white bg-white py-0.5">
+          <li
+            class="py-4 text-myblue-1 border-x-1 mb-0.5 block cursor-pointer hover:bg-slate-100 cursor-pointer hover:bg-slate-100"
+          >
+            <i class="fa-solid fa-house"></i>
+            <h5 class="text-xs">Home</h5>
+          </li>
+          <li
+            class="py-4 text-myblue-1 border-x-1 mb-0.5 block cursor-pointer hover:bg-slate-100"
+          >
+            <i class="fa-solid fa-bell"></i>
+            <h5 class="text-xs">Notifications</h5>
+          </li>
+          <li
+            class="py-4 text-myblue-1 border-x-1 block cursor-pointer hover:bg-slate-100"
+          >
+            <i class="fa-solid fa-pen-to-square"></i>
+            <h5 class="text-xs">Write Post</h5>
+          </li>
+        </ul>
+        <div id="tools-menu" class="absolute bottom-1 right-0 left-0">
+          <ul class="text-center text-xl text-white bg-white py-0.5">
+            <li
+              class="py-2 text-myblue-1 border-x-1 block cursor-pointer hover:bg-slate-100"
+            >
+              <i class="fa-solid fa-gear"></i>
+              <h5 class="text-xs">Settings</h5>
+            </li>
+            <li
+              class="py-2 text-myblue-1 border-x-1 block cursor-pointer hover:bg-slate-100"
+            >
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <h5 class="text-xs">Log Out</h5>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="" class="container p-10 relative ml-24">
+        <h1 class="text-2xl font-extrabold text-myblue-1">Post Lists</h1>
+        <div
+          class="w-3/4 border-b border-slate-300 mt-10 text-myblue-2 flex overflow-x-auto"
+        >
+          <span
+            class="mr-3 font-bold border-b box-border border-mygray-2 block h-full px-1"
+            >Published</span
+          >
+          <span class="px-1">Drafts</span>
+        </div>
+        <div id="" class="w-full flex post-list-section">
+          <div
+            class="post-data w-3/4 border-b flex border-mygray-2 mt-5 py-1 hover:bg-slate-100 cursor-pointer"
+          >
+            <div
+              class="w-1/4 h-full bg-gray-400 inline-block overflow-hidden mr-2"
+            >
+              <img
+                src="img/post.jpg"
+                alt=""
+                srcset=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="data-container py-3">
+              <h1 class="post-title text-mygray-1 font-extrabold text-xl">
+                Lorem ipsum dolor sit.
+              </h1>
+              <p class="post-body my-2 font-light text-mygray-1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Asperiores ipsum, quibusdam ut sapiente mollitia expedita qui ab
+                quis sed esse hic minima consectetur delectus fugiat itaque
+                repellendus quas illo nobis.
+              </p>
+              <h4 class="post-time text-mygray-2 font-light text-sm">
+                Friday, 20 September 2021
+              </h4>
+            </div>
+          </div>
+          <div class="post-action border-b border-b-slate-300 w-1/4 flex">
+            <div
+              class="edit-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myblue-2 hover:bg-slate-100 cursor-pointer"
+            >
+              <i class="fa-solid fa-pen"></i>
+              <span class="text-base mt-1">edit</span>
+            </div>
+            <div
+              class="delete-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myred hover:bg-myred/10 cursor-pointer"
+            >
+              <i class="fa-solid fa-trash"></i>
+              <span class="text-base mt-1">Delete</span>
+            </div>
+          </div>
+        </div>
+        <div id="" class="w-full flex post-list-section">
+          <div
+            class="post-data w-3/4 border-b flex border-mygray-2 mt-5 py-1 hover:bg-slate-100 cursor-pointer"
+          >
+            <div
+              class="w-1/4 h-full bg-gray-400 inline-block overflow-hidden mr-2"
+            >
+              <img
+                src="img/post.jpg"
+                alt=""
+                srcset=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="data-container py-3">
+              <h1 class="post-title text-mygray-1 font-extrabold text-xl">
+                Lorem ipsum dolor sit.
+              </h1>
+              <p class="post-body my-2 font-light text-mygray-1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Asperiores ipsum, quibusdam ut sapiente mollitia expedita qui ab
+                quis sed esse hic minima consectetur delectus fugiat itaque
+                repellendus quas illo nobis.
+              </p>
+              <h4 class="post-time text-mygray-2 font-light text-sm">
+                Friday, 20 September 2021
+              </h4>
+            </div>
+          </div>
+          <div class="post-action border-b border-b-slate-300 w-1/4 flex">
+            <div
+              class="edit-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myblue-2 hover:bg-slate-100 cursor-pointer"
+            >
+              <i class="fa-solid fa-pen"></i>
+              <span class="text-base mt-1">edit</span>
+            </div>
+            <div
+              class="delete-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myred hover:bg-myred/10 cursor-pointer"
+            >
+              <i class="fa-solid fa-trash"></i>
+              <span class="text-base mt-1">Delete</span>
+            </div>
+          </div>
+        </div>
+        <div id="" class="w-full flex post-list-section">
+          <div
+            class="post-data w-3/4 border-b flex border-mygray-2 mt-5 py-1 hover:bg-slate-100 cursor-pointer"
+          >
+            <div
+              class="w-1/4 h-full bg-gray-400 inline-block overflow-hidden mr-2"
+            >
+              <img
+                src="img/post.jpg"
+                alt=""
+                srcset=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="data-container py-3">
+              <h1 class="post-title text-mygray-1 font-extrabold text-xl">
+                Lorem ipsum dolor sit.
+              </h1>
+              <p class="post-body my-2 font-light text-mygray-1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Asperiores ipsum, quibusdam ut sapiente mollitia expedita qui ab
+                quis sed esse hic minima consectetur delectus fugiat itaque
+                repellendus quas illo nobis.
+              </p>
+              <h4 class="post-time text-mygray-2 font-light text-sm">
+                Friday, 20 September 2021
+              </h4>
+            </div>
+          </div>
+          <div class="post-action border-b border-b-slate-300 w-1/4 flex">
+            <div
+              class="edit-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myblue-2 hover:bg-slate-100 cursor-pointer"
+            >
+              <i class="fa-solid fa-pen"></i>
+              <span class="text-base mt-1">edit</span>
+            </div>
+            <div
+              class="delete-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myred hover:bg-myred/10 cursor-pointer"
+            >
+              <i class="fa-solid fa-trash"></i>
+              <span class="text-base mt-1">Delete</span>
+            </div>
+          </div>
+        </div>
+        <div id="" class="w-full flex post-list-section">
+          <div
+            class="post-data w-3/4 border-b flex border-mygray-2 mt-5 py-1 hover:bg-slate-100 cursor-pointer"
+          >
+            <div
+              class="w-1/4 h-full bg-gray-400 inline-block overflow-hidden mr-2"
+            >
+              <img
+                src="img/post.jpg"
+                alt=""
+                srcset=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="data-container py-3">
+              <h1 class="post-title text-mygray-1 font-extrabold text-xl">
+                Lorem ipsum dolor sit.
+              </h1>
+              <p class="post-body my-2 font-light text-mygray-1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Asperiores ipsum, quibusdam ut sapiente mollitia expedita qui ab
+                quis sed esse hic minima consectetur delectus fugiat itaque
+                repellendus quas illo nobis.
+              </p>
+              <h4 class="post-time text-mygray-2 font-light text-sm">
+                Friday, 20 September 2021
+              </h4>
+            </div>
+          </div>
+          <div class="post-action border-b border-b-slate-300 w-1/4 flex">
+            <div
+              class="edit-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myblue-2 hover:bg-slate-100 cursor-pointer"
+            >
+              <i class="fa-solid fa-pen"></i>
+              <span class="text-base mt-1">edit</span>
+            </div>
+            <div
+              class="delete-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myred hover:bg-myred/10 cursor-pointer"
+            >
+              <i class="fa-solid fa-trash"></i>
+              <span class="text-base mt-1">Delete</span>
+            </div>
+          </div>
+        </div>
+        <div id="" class="w-full flex post-list-section">
+          <div
+            class="post-data w-3/4 border-b flex border-mygray-2 mt-5 py-1 hover:bg-slate-100 cursor-pointer"
+          >
+            <div
+              class="w-1/4 h-full bg-gray-400 inline-block overflow-hidden mr-2"
+            >
+              <img
+                src="img/post.jpg"
+                alt=""
+                srcset=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="data-container py-3">
+              <h1 class="post-title text-mygray-1 font-extrabold text-xl">
+                Lorem ipsum dolor sit.
+              </h1>
+              <p class="post-body my-2 font-light text-mygray-1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Asperiores ipsum, quibusdam ut sapiente mollitia expedita qui ab
+                quis sed esse hic minima consectetur delectus fugiat itaque
+                repellendus quas illo nobis.
+              </p>
+              <h4 class="post-time text-mygray-2 font-light text-sm">
+                Friday, 20 September 2021
+              </h4>
+            </div>
+          </div>
+          <div class="post-action border-b border-b-slate-300 w-1/4 flex">
+            <div
+              class="edit-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myblue-2 hover:bg-slate-100 cursor-pointer"
+            >
+              <i class="fa-solid fa-pen"></i>
+              <span class="text-base mt-1">edit</span>
+            </div>
+            <div
+              class="delete-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myred hover:bg-myred/10 cursor-pointer"
+            >
+              <i class="fa-solid fa-trash"></i>
+              <span class="text-base mt-1">Delete</span>
+            </div>
+          </div>
+        </div>
+        <div id="" class="w-full flex post-list-section">
+          <div
+            class="post-data w-3/4 border-b flex border-mygray-2 mt-5 py-1 hover:bg-slate-100 cursor-pointer"
+          >
+            <div
+              class="w-1/4 h-full bg-gray-400 inline-block overflow-hidden mr-2"
+            >
+              <img
+                src="img/post.jpg"
+                alt=""
+                srcset=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="data-container py-3">
+              <h1 class="post-title text-mygray-1 font-extrabold text-xl">
+                Lorem ipsum dolor sit.
+              </h1>
+              <p class="post-body my-2 font-light text-mygray-1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Asperiores ipsum, quibusdam ut sapiente mollitia expedita qui ab
+                quis sed esse hic minima consectetur delectus fugiat itaque
+                repellendus quas illo nobis.
+              </p>
+              <h4 class="post-time text-mygray-2 font-light text-sm">
+                Friday, 20 September 2021
+              </h4>
+            </div>
+          </div>
+          <div class="post-action border-b border-b-slate-300 w-1/4 flex">
+            <div
+              class="edit-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myblue-2 hover:bg-slate-100 cursor-pointer"
+            >
+              <i class="fa-solid fa-pen"></i>
+              <span class="text-base mt-1">edit</span>
+            </div>
+            <div
+              class="delete-action w-1/2 flex flex-col py-2 justify-center items-center text-3xl text-myred hover:bg-myred/10 cursor-pointer"
+            >
+              <i class="fa-solid fa-trash"></i>
+              <span class="text-base mt-1">Delete</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
