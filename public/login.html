@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0fd1b4aca8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Log In | Bloggy</title>
+  </head>
+  <body>
+    <main
+      class="bg-mygray-2 min-h-screen w-full flex justify-center items-center flex-grow"
+    >
+      <section
+        id="login-card"
+        class="w-2/5 h-[36rem] bg-white rounded-lg px-10"
+      >
+        <h1 class="text-center font-extrabold text-myred text-3xl my-8">
+          Log In
+        </h1>
+        <a
+          href=""
+          id="login-google"
+          class="w-full h-10 bg-myblue-1 text-white rounded-lg mt-5 flex items-center justify-center hover:bg-myblue-2"
+        >
+          <i class="fa-brands fa-google mr-2"></i>LOG-IN WITH GOOGLE</a
+        >
+        <a
+          href=""
+          id="login-github"
+          class="w-full h-10 bg-myblue-1 text-white rounded-lg mt-5 flex items-center justify-center hover:bg-myblue-2"
+          ><i class="fa-brands fa-facebook-f mr-2"></i>LOG-IN WITH FACEBOOK</a
+        >
+        <span
+          class="my-5 inline-block text-center w-full text-myblue-2 font-extralight"
+          >or</span
+        >
+        <form action="#" method="post">
+          <label for="username" class="text-sm text-myblue-2 text-left"
+            >Username / Email</label
+          >
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="inline-block w-full h-12 border border-myred rounded-md mt-1 mb-3 px-2 outline-none text-myblue-1"
+          />
+          <label for="password" class="text-sm text-myblue-2 text-left"
+            >Password</label
+          >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="inline-block w-full h-12 border border-myred rounded-md mt-1 mb-5 px-2 outline-none text-myblue-1"
+          />
+          <input
+            type="submit"
+            value="LOG IN"
+            class="flex w-full h-10 bg-myred text-white rounded-md cursor-pointer hover:bg-opacity-80"
+          />
+          <a
+            href="#"
+            class="text-center text-myblue-2 text-sm inline-block w-full underline mt-4"
+            >Lupa Password?</a
+          >
+          <span
+            class="text-center text-myblue-2 text-sm inline-block w-full mt-6"
+            >belum punya akun? daftar
+            <a href="#" class="underline"> disini</a></span
+          >
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
