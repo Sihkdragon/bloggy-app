@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwindcss -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- My CSS  -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0fd1b4aca8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dashboard | Bloggy</title>
+  </head>
+  <body>
+    <main class="flex">
+      <section
+        id=""
+        class="border-r border-myblue-1 min-h-screen py-10 w-24 fixed"
+      >
+        <a
+          href="index.html"
+          class="flex items-center justify-center text-3xl font-extrabold text-center text-white bg-myblue-1 rounded-full w-12 h-12 mx-auto"
+        >
+          B
+        </a>
+        <ul
+          class="text-center my-28 flex flex-col space-y-6 text-xl text-white bg-white py-0.5"
+        >
+          <li
+            class="py-4 text-myblue-1 block hover:bg-slate-100 cursor-pointer"
+          >
+            <a href="dashboard.html">
+              <i class="fa-solid fa-house"></i>
+              <h5 class="text-xs">Home</h5>
+            </a>
+          </li>
+          <li
+            class="py-4 text-myblue-1 border-x-1 block cursor-pointer hover:bg-slate-100"
+          >
+            <i class="fa-solid fa-bell"></i>
+            <h5 class="text-xs">Notifications</h5>
+          </li>
+          <li
+            class="py-4 text-myblue-1 border-x-1 block cursor-pointer hover:bg-slate-100 aktif"
+          >
+            <a href="editor.html">
+              <i class="fa-solid fa-pen-to-square"></i>
+              <h5 class="text-xs">Write Post</h5>
+            </a>
+          </li>
+        </ul>
+        <div id="tools-menu" class="absolute bottom-1 right-0 left-0">
+          <ul class="text-center text-xl text-white bg-white py-0.5">
+            <li
+              class="py-2 text-myblue-1 border-x-1 block cursor-pointer hover:bg-slate-100"
+            >
+              <i class="fa-solid fa-gear"></i>
+              <h5 class="text-xs">Settings</h5>
+            </li>
+            <li
+              class="py-2 text-myblue-1 border-x-1 block cursor-pointer hover:bg-slate-100"
+            >
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <h5 class="text-xs">Log Out</h5>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="" class="w-full p-10 relative ml-24">
+        <h1 class="text-2xl font-extrabold text-myblue-1">Post Editor</h1>
+        <div
+          class="w-3/4 border-t border-slate-300 mt-10 text-myblue-2 flex overflow-x-auto relative"
+        >
+          </div>
+        </div>
+        <div id="" class="w-full flex editor-section py-10">
+            <form action="#" method="post" class="flex flex-col w-full">
+                <label for="cover" class="w-96 h-32 flex px-5 flex-col justify-center items-center rounded text-3xl border border-myblue-2/50 text-myblue-2/20">
+                    <i class="fas fas fa-plus-circle"></i>
+                    <span class="text-lg mt-2">Choose Image Cover Here...</span></label>
+                <input type="file" name="cover" id="cover" class="hidden">
+                <input type="text" name="title" id="title" class="block w-1/2 text-3xl h-16 my-4 border-b border-myblue-2/20 px-1" placeholder="Post Title">
+                <label for="body">Write Post</label>
+                <textarea name="body" id="body" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -36,4 +36,7 @@
   .footerLink {
     @apply text-sm text-myblue-2 hover:text-opacity-80;
   }
+  .aktif {
+    @apply bg-myblue-2/40;
+  }
 }

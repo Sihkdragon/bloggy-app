@@ -39,15 +39,19 @@
         >
           B
         </a>
-        <ul class="text-center mt-20 text-xl text-white bg-white py-0.5">
+        <ul
+          class="text-center my-28 flex flex-col space-y-6 text-xl text-white bg-white py-0.5"
+        >
           <li
-            class="py-4 text-myblue-1 border-x-1 mb-0.5 block cursor-pointer hover:bg-slate-100 cursor-pointer hover:bg-slate-100"
+            class="py-4 text-myblue-1 border-x-1 block hover:bg-slate-100 cursor-pointer aktif"
           >
-            <i class="fa-solid fa-house"></i>
-            <h5 class="text-xs">Home</h5>
+            <a href="dashboard.html">
+              <i class="fa-solid fa-house"></i>
+              <h5 class="text-xs">Home</h5>
+            </a>
           </li>
           <li
-            class="py-4 text-myblue-1 border-x-1 mb-0.5 block cursor-pointer hover:bg-slate-100"
+            class="py-4 text-myblue-1 border-x-1 block cursor-pointer hover:bg-slate-100"
           >
             <i class="fa-solid fa-bell"></i>
             <h5 class="text-xs">Notifications</h5>
@@ -55,8 +59,10 @@
           <li
             class="py-4 text-myblue-1 border-x-1 block cursor-pointer hover:bg-slate-100"
           >
-            <i class="fa-solid fa-pen-to-square"></i>
-            <h5 class="text-xs">Write Post</h5>
+            <a href="editor.html">
+              <i class="fa-solid fa-pen-to-square"></i>
+              <h5 class="text-xs">Write Post</h5>
+            </a>
           </li>
         </ul>
         <div id="tools-menu" class="absolute bottom-1 right-0 left-0">
@@ -76,16 +82,23 @@
           </ul>
         </div>
       </section>
-      <section id="" class="container p-10 relative ml-24">
+      <section id="" class="w-full p-10 relative ml-24">
         <h1 class="text-2xl font-extrabold text-myblue-1">Post Lists</h1>
         <div
-          class="w-3/4 border-b border-slate-300 mt-10 text-myblue-2 flex overflow-x-auto"
+          class="w-3/4 border-b border-slate-300 mt-10 text-myblue-2 flex overflow-x-auto relative"
         >
           <span
-            class="mr-3 font-bold border-b box-border border-mygray-2 block h-full px-1"
+            class="mr-3 font-bold border-b box-border border-mygray-2 block h-full px-1 cursor-pointer"
             >Published</span
           >
-          <span class="px-1">Drafts</span>
+          <span class="px-1 cursor-pointer">Drafts</span>
+          <div
+            id="sort-button"
+            class="absolute right-3 flex items-center text-myblue-2/80 cursor-pointer hover:text-myblue-2/60"
+          >
+            <span>Newest</span>
+            <i class="fas fas fa-angle-down text-xl ml-3"></i>
+          </div>
         </div>
         <div id="" class="w-full flex post-list-section">
           <div
