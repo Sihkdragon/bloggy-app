@@ -42,14 +42,14 @@
         <ul
           class="text-center my-28 flex flex-col space-y-6 text-xl text-white bg-white py-0.5"
         >
+        <a href="dashboard.html">
           <li
             class="py-4 text-myblue-1 block hover:bg-slate-100 cursor-pointer"
           >
-            <a href="dashboard.html">
               <i class="fa-solid fa-house"></i>
               <h5 class="text-xs">Home</h5>
-            </a>
-          </li>
+            </li>
+          </a>
           <li
             class="py-4 text-myblue-1 border-x-1 block cursor-pointer hover:bg-slate-100"
           >
@@ -73,12 +73,13 @@
               <i class="fa-solid fa-gear"></i>
               <h5 class="text-xs">Settings</h5>
             </li>
+            <a href="index.html">
             <li
               class="py-2 text-myblue-1 border-x-1 block cursor-pointer hover:bg-slate-100"
             >
               <i class="fa-solid fa-arrow-right-from-bracket"></i>
               <h5 class="text-xs">Log Out</h5>
-            </li>
+            </li></a>
           </ul>
         </div>
       </section>
@@ -95,9 +96,8 @@
                     <i class="fas fas fa-plus-circle"></i>
                     <span class="text-lg mt-2">Choose Image Cover Here...</span></label>
                 <input type="file" name="cover" id="cover" class="hidden">
-                <input type="text" name="title" id="title" class="block w-1/2 text-3xl h-16 my-4 border-b border-myblue-2/20 px-1" placeholder="Post Title">
-                <label for="body">Write Post</label>
-                <textarea name="body" id="body" cols="30" rows="10"></textarea>
+                <input type="text" name="title" id="title" class="block w-1/2 outline-none text-myblue-2/75 text-3xl h-16 my-4 border-b border-myblue-2/20 px-1" placeholder="Post Title">           
+                <textarea name="body" id="body" cols="30" rows="10" class="outline-none text-myblue-2/90 p-1" placeholder="Write Post Here"></textarea>
             </form>
         </div>
       </section>
