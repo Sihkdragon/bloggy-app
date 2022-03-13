@@ -15,6 +15,9 @@
   .navitgationButton {
     @apply inline-block mr-[80px] relative text-[20px] hover:text-myblue-2 hover:after:underlineAnchor;
   }
+  .navitgationButtonAktif {
+    @apply inline-block mr-[80px] relative text-[20px] text-myblue-2 after:underlineAnchor;
+  }
   .underlineAnchor {
     @apply bg-myblue-2 w-full h-[1px] bottom-0 left-0 absolute;
   }
@@ -38,5 +41,11 @@
   }
   .aktif {
     @apply bg-myblue-2/40;
+  }
+  .news-card {
+    @apply border-2 border-myblue-2 rounded-lg overflow-hidden pb-5;
+  }
+  .card-body {
+    @apply px-2 py-2 block;
   }
 }

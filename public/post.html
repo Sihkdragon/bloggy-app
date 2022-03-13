@@ -52,7 +52,12 @@
             id="post-cover"
             class="w-full h-80 overflow-hidden rounded-sm border border-myblue-1/75"
           >
-            <img src="img/post.jpg" alt="" srcset="" class="object-cover" />
+            <img
+              src="img/image-hero.jpg"
+              alt=""
+              srcset=""
+              class="object-cover"
+            />
           </div>
           <h1 class="my-5 text-4xl font-extrabold text-mygray-1">
             Lorem ipsum dolor sit amet
@@ -124,11 +129,23 @@
           id="news-lists"
           class="w-60 border border-myblue-2 h-[500px] p-2 right-8 overflow-x-scroll drop-shadow-2xl"
         >
+          <h1
+            class="text-myred text-lg text-center border-b border-mygray-1/50"
+          >
+            More News
+          </h1>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search"
+            class="w-full h-10 my-2 ring-1 ring-myblue-2 rounded-md px-2 text-myblue-2/75 outline-none"
+          />
           <div
             class="news-items w-full flex space-x-2 border-b border-mygray-2/50 py-2"
           >
             <img
-              src="img/post.jpg"
+              src="img/image-hero.jpg"
               alt=""
               srcset=""
               class="block w-1/3 overflow-hidden object-cover"
@@ -206,6 +223,68 @@
           </div>
         </section>
       </div>
+    </main>
+    <main class="bg-white w-full h-full pt-3 mt-20">
+      <footer
+        id="footer"
+        class="mycontainer grid grid-cols-6 gap-x-12 border-t border-myblue-2 pt-10 pb-8"
+      >
+        <div class="footer-item flex flex-col justify-center items-center">
+          <h1 class="font-[1000] text-myred text-2xl block">BLOGGY</h1>
+          <h5 class="block text-xs text-myblue-2 -m-2">blog for Everyone</h5>
+        </div>
+        <div class="footer-item">
+          <h1 class="text-lg text-myblue-1">Contact</h1>
+          <ul class="list-disc ml-4 mt-2">
+            <li>
+              <a href="http://instagram.com/ditotisi" class="footerLink"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="http://github.com/sihkdragon" class="footerLink"
+                >Github</a
+              >
+            </li>
+            <li><a href="#" class="footerLink">Bloggy</a></li>
+          </ul>
+        </div>
+        <div class="footer-item w-72">
+          <h1 class="text-lg text-myblue-1">Reach Us</h1>
+          <p class="text-myblue-2 text-sm mt-2">
+            Jl. Dipatiukur No. 117 Kecamatan Coblong
+            <br class="text-myblue-2 text-sm" />Kota Bandung Jawa Barat
+          </p>
+          <button class="px-2 py-1 mt-2 btn-secondary">Open Maps</button>
+        </div>
+        <div class="footer-item ml-24">
+          <h1 class="text-lg text-myblue-1">Links</h1>
+          <ul class="list-disc ml-4 mt-2">
+            <li>
+              <a href="index.html#mission-section" class="footerLink">About</a>
+            </li>
+            <li><a href="gallery.html" class="footerLink">Gallery</a></li>
+            <li><a href="news.html" class="footerLink">News</a></li>
+          </ul>
+        </div>
+        <form action="#" method="post">
+          <div class="footer-item text-center w-96">
+            <h1 class="text-lg text-myblue-1">Get Our News</h1>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="w-4/5 mx-auto border border-myred rounded-3xl mt-2 outline-none h-8 px-2 py-1 text-myblue-2"
+              placeholder="example@gmail.com"
+            />
+            <input
+              type="submit"
+              value="subscribe"
+              class="btn-secondary block mx-auto px-4 py-1 mt-3 font-light"
+            />
+          </div>
+        </form>
+      </footer>
     </main>
   </body>
 </html>
